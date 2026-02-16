@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "share": "disabled",
+  "autoupdate": false,
+  "experimental": {
+    "openTelemetry": false
+  },
+  "disabled_providers": [
+    "opencode"
+  ],
+  "provider": {
+    "custom-env-provider": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Env-Provider",
+      "options": {
+        "baseURL": "{env:MY_LLM_BASE_URL}",
+        "apiKey": "{env:MY_LLM_API_KEY}"
+      },
+      "models": {
+        "{env:MY_LLM_MODEL_NAME}": {
+          "name": "Dynamic Model"
+        }
+      }
+    }
+  },
+  "model": "custom-env-provider/{env:MY_LLM_MODEL_NAME}"
+}
