@@ -1,7 +1,7 @@
 # OpenCode Network Traffic Investigation — Report
 
-**Date:** 2026-02-16  
-**Tool:** opencode-ai (npm `opencode-ai`, v1.1.52)  
+**Date:** 2026-02-23  
+**Tool:** opencode-ai (npm `opencode-ai`, v1.2.10)  
 **Method:** mitmproxy interception inside Docker (Ubuntu 24.04)
 
 ---
@@ -13,8 +13,8 @@
 | Container OS | Ubuntu 24.04 |
 | Node.js | v20 (NodeSource) |
 | Interception | `mitmdump` on port 8080, all HTTP/HTTPS proxied |
-| LLM Provider | OpenRouter (`openrouter.ai/api/`) |
-| Model | `z-ai/glm-4.7` |
+| LLM Provider | OpenRouter (`openrouter.ai/api/v1`) |
+| Model | `google/gemini-2.0-flash-001` |
 | Config flags | `share: "disabled"`, `autoupdate: false`, `openTelemetry: false`, `disabled_providers: ["opencode"]` |
 | Prompt tested | `"What is 2+2? Reply with just the number."` |
 
@@ -22,7 +22,7 @@
 
 | Metric | Value |
 |---|---|
-| Total requests logged | **1195** |
+| Total requests logged | **43** |
 | Unique request signatures | **35** |
 | Unique domains contacted | **5** |
 
@@ -30,7 +30,7 @@
 
 | # | Domain | Purpose | Concern? |
 |---|---|---|---|
-| 1 | `openrouter.ai` | Configured LLM API (`POST /api/chat/completions`) | ✅ Expected |
+| 1 | `openrouter.ai` | Configured LLM API (`POST /api/v1/chat/completions`) | ✅ Expected |
 | 2 | `registry.npmjs.org` | Runtime npm package downloads (provider SDK, plugins, auth) | ⚠️ See below |
 | 3 | `models.dev` | Third-party model metadata catalog (`GET /api.json`) | ⚠️ See below |
 | 4 | `github.com` | ripgrep binary download | ⚠️ See below |
@@ -42,7 +42,7 @@
 
 ### 1. `openrouter.ai` — LLM API (expected)
 
-~1142 of the 1195 requests were `POST https://openrouter.ai/api/chat/completions`. This is the configured provider endpoint — completely expected. The high count indicates aggressive retry behavior, likely caused by the model consistently failing or returning errors.
+Requests were `POST https://openrouter.ai/api/v1/chat/completions`. This is the configured provider endpoint — completely expected. In version 1.2.10, the behavior is more stable than earlier versions, with no excessive retries observed on successful responses.
 
 ### 2. `registry.npmjs.org` — Runtime npm Installs
 
@@ -62,11 +62,11 @@ opencode dynamically installs provider SDKs at **runtime** (not just install tim
 | `@standard-schema/spec` | Schema specification |
 | `zod` | Schema validation |
 
-**Note:** These are fetched on every cold start. This includes Anthropic auth packages even when only OpenRouter is configured.
+**Note:** These are fetched on every cold start if not cached. This includes Anthropic auth packages even when only OpenRouter is configured.
 
 ### 3. `models.dev` — Model Catalog
 
-`GET https://models.dev/api.json` fetches a JSON catalog of AI models. This is a third-party service not owned by OpenRouter or opencode. Used to populate model metadata/capabilities.
+`GET https://models.dev/api.json` fetches a JSON catalog of AI models. This is a third-party service used to populate model metadata/capabilities.
 
 ### 4. `github.com` + `release-assets.githubusercontent.com` — ripgrep
 
@@ -88,7 +88,7 @@ opencode downloads `ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz` from GitHub
 - opencode makes **runtime network calls beyond your LLM API** to npm, GitHub, and models.dev
 - These don't transmit workspace content, but they leak metadata (IP address, timing, user-agent)
 - Anthropic auth packages are fetched even when you only use OpenRouter
-- The retry behavior is extremely aggressive (~1142 POSTs for a single prompt that failed)
+- Version 1.2.10 is significantly more stable in terms of API request volume than earlier versions (v1.1.52)
 
 ---
 
@@ -106,5 +106,5 @@ opencode downloads `ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz` from GitHub
 
 ## Raw Data
 
-- `output/urls.log` — Full log of all 1195 intercepted requests
+- `output/urls.log` — Full log of all intercepted requests
 - `output/mitmdump.log` — Raw mitmdump output

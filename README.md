@@ -34,9 +34,9 @@ A Docker container (Ubuntu 24.04) runs opencode-ai with **all HTTP/HTTPS traffic
 Copy `api.env.example` to `api.env` and fill in your provider details:
 
 ```env
-MY_LLM_BASE_URL=https://openrouter.ai/api/
+MY_LLM_BASE_URL=https://openrouter.ai/api/v1
 MY_LLM_API_KEY=sk-or-v1-your-key-here
-MY_LLM_MODEL_NAME=your-model-name
+MY_LLM_MODEL_NAME=google/gemini-2.0-flash-001
 ```
 
 Edit `openrouter.json` if you want to change the opencode config (provider, disabled features, etc.).
