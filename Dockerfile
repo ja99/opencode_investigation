@@ -35,9 +35,6 @@ RUN npm install -g opencode-ai
 # ── Set up workspace ─────────────────────────────────────────────
 WORKDIR /workspace
 
-# Copy the sample project files
-COPY main.py /workspace/main.py
-
 # Copy opencode config as project-level config
 COPY openrouter.json /workspace/opencode.json
 
