@@ -1,303 +1,130 @@
-[20:19:55.940] Loading script /app/url_logger.py
-[20:19:55.943] HTTP(S) proxy listening at *:8080.
-[20:19:59.075][127.0.0.1:45476] client connect
-[20:19:59.113][127.0.0.1:45476] server connect models.dev:443 (104.26.8.108:443)
-[URL-LOGGER] GET https://models.dev/api.json
-127.0.0.1:45476: GET https://models.dev/api.json
-              << 200 OK 112k
-[20:19:59.180][127.0.0.1:45476] client disconnect
-[20:19:59.180][127.0.0.1:45476] server disconnect models.dev:443 (104.26.8.108:443)
-[20:19:59.323][127.0.0.1:45478] client connect
-[20:19:59.347][127.0.0.1:45478] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/opencode-anthropic-auth
-127.0.0.1:45478: GET https://registry.npmjs.org/opencode-anthropic-auth
-              << 200 OK 2.8k
-[20:19:59.557][127.0.0.1:45478] client disconnect
-[20:19:59.557][127.0.0.1:45478] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:19:59.558][127.0.0.1:45490] client connect
-[20:19:59.558][127.0.0.1:45498] client connect
-[20:19:59.601][127.0.0.1:45490] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:19:59.604][127.0.0.1:45498] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@openauthjs%2fopenauth
-[URL-LOGGER] GET https://registry.npmjs.org/opencode-anthropic-auth/-/opencode-anthropic-auth-0.0.13.tgz
-127.0.0.1:45498: GET https://registry.npmjs.org/opencode-anthropic-auth/-/op…
-              << 200 OK 6.1k
-[20:19:59.662][127.0.0.1:45498] client disconnect
-[20:19:59.662][127.0.0.1:45498] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:45490: GET https://registry.npmjs.org/@openauthjs%2fopenauth
-              << 200 OK 11.7k
-[20:20:00.296][127.0.0.1:45490] client disconnect
-[20:20:00.297][127.0.0.1:45490] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.298][127.0.0.1:45514] client connect
-[20:20:00.298][127.0.0.1:45530] client connect
-[20:20:00.299][127.0.0.1:45546] client connect
-[20:20:00.299][127.0.0.1:45558] client connect
-[20:20:00.319][127.0.0.1:45514] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.322][127.0.0.1:45530] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.324][127.0.0.1:45546] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.327][127.0.0.1:45558] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/jose
-[URL-LOGGER] GET https://registry.npmjs.org/aws4fetch
-[URL-LOGGER] GET https://registry.npmjs.org/@standard-schema%2fspec
-[URL-LOGGER] GET https://registry.npmjs.org/@openauthjs/openauth/-/openauth-0.4.3.tgz
-127.0.0.1:45530: GET https://registry.npmjs.org/aws4fetch
-              << 200 OK 15.2k
-[20:20:00.534][127.0.0.1:45530] client disconnect
-[20:20:00.534][127.0.0.1:45530] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.535][127.0.0.1:45560] client connect
-127.0.0.1:45514: GET https://registry.npmjs.org/jose
-              << 200 OK 123k
-[20:20:00.550][127.0.0.1:45514] client disconnect
-[20:20:00.551][127.0.0.1:45514] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.551][127.0.0.1:45560] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.555][127.0.0.1:45570] client connect
-127.0.0.1:45558: GET https://registry.npmjs.org/@openauthjs/openauth/-/opena…
-              << 200 OK 81.8k
-[20:20:00.558][127.0.0.1:45558] client disconnect
-[20:20:00.559][127.0.0.1:45558] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.572][127.0.0.1:45570] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/aws4fetch/-/aws4fetch-1.0.20.tgz
-[URL-LOGGER] GET https://registry.npmjs.org/jose/-/jose-5.9.6.tgz
-127.0.0.1:45560: GET https://registry.npmjs.org/aws4fetch/-/aws4fetch-1.0.20…
-              << 200 OK 10.1k
-[20:20:00.611][127.0.0.1:45560] client disconnect
-[20:20:00.612][127.0.0.1:45560] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:45570: GET https://registry.npmjs.org/jose/-/jose-5.9.6.tgz
-              << 200 OK 71.2k
-[20:20:00.643][127.0.0.1:45570] client disconnect
-[20:20:00.644][127.0.0.1:45570] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:45546: GET https://registry.npmjs.org/@standard-schema%2fspec
-              << 200 OK 2.0k
-[20:20:00.704][127.0.0.1:45546] client disconnect
-[20:20:00.704][127.0.0.1:45546] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:00.705][127.0.0.1:45582] client connect
-[20:20:00.720][127.0.0.1:45582] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@standard-schema/spec/-/spec-1.0.0-beta.3.tgz
-127.0.0.1:45582: GET https://registry.npmjs.org/@standard-schema/spec/-/spec…
-              << 200 OK 6.8k
-[20:20:01.241][127.0.0.1:45582] client disconnect
-[20:20:01.241][127.0.0.1:45582] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.242][127.0.0.1:35340] client connect
-[20:20:01.243][127.0.0.1:35354] client connect
-[20:20:01.257][127.0.0.1:35354] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.258][127.0.0.1:35340] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/arctic
-[URL-LOGGER] GET https://registry.npmjs.org/hono
-127.0.0.1:35354: GET https://registry.npmjs.org/arctic
-              << 200 OK 16.9k
-[20:20:01.477][127.0.0.1:35354] client disconnect
-[20:20:01.478][127.0.0.1:35354] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.479][127.0.0.1:35356] client connect
-[20:20:01.480][127.0.0.1:35372] client connect
-[20:20:01.480][127.0.0.1:35382] client connect
-[20:20:01.480][127.0.0.1:35390] client connect
-127.0.0.1:35340: GET https://registry.npmjs.org/hono
-              << 200 OK 162k
-[20:20:01.488][127.0.0.1:35340] client disconnect
-[20:20:01.488][127.0.0.1:35340] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.497][127.0.0.1:35400] client connect
-[20:20:01.501][127.0.0.1:35356] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.504][127.0.0.1:35372] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.506][127.0.0.1:35382] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.507][127.0.0.1:35390] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.514][127.0.0.1:35400] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs%2fjwt
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs%2fcrypto
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs%2fencoding
-[URL-LOGGER] GET https://registry.npmjs.org/arctic/-/arctic-2.3.4.tgz
-[URL-LOGGER] GET https://registry.npmjs.org/hono/-/hono-4.12.2.tgz
-127.0.0.1:35390: GET https://registry.npmjs.org/arctic/-/arctic-2.3.4.tgz
-              << 200 OK 12.4k
-[20:20:01.574][127.0.0.1:35390] client disconnect
-[20:20:01.575][127.0.0.1:35390] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35400: GET https://registry.npmjs.org/hono/-/hono-4.12.2.tgz
-              << 200 OK 208k
-[20:20:01.597][127.0.0.1:35400] client disconnect
-[20:20:01.598][127.0.0.1:35400] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35356: GET https://registry.npmjs.org/@oslojs%2fjwt
-              << 200 OK 1.0k
-[20:20:01.904][127.0.0.1:35356] client disconnect
-[20:20:01.905][127.0.0.1:35356] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.905][127.0.0.1:35412] client connect
-127.0.0.1:35372: GET https://registry.npmjs.org/@oslojs%2fcrypto
-              << 200 OK 3.5k
-[20:20:01.917][127.0.0.1:35372] client disconnect
-[20:20:01.917][127.0.0.1:35372] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.919][127.0.0.1:35416] client connect
-[20:20:01.919][127.0.0.1:35432] client connect
-[20:20:01.919][127.0.0.1:35446] client connect
-[20:20:01.923][127.0.0.1:35412] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.946][127.0.0.1:35416] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/jwt/-/jwt-0.2.0.tgz
-[20:20:01.958][127.0.0.1:35432] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:01.962][127.0.0.1:35446] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs%2fasn1
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs%2fbinary
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/crypto/-/crypto-1.0.1.tgz
-127.0.0.1:35412: GET https://registry.npmjs.org/@oslojs/jwt/-/jwt-0.2.0.tgz
-              << 200 OK 3.5k
-[20:20:02.140][127.0.0.1:35412] client disconnect
-[20:20:02.141][127.0.0.1:35412] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35446: GET https://registry.npmjs.org/@oslojs/crypto/-/crypto-1.0.…
-              << 200 OK 16.1k
-[20:20:02.208][127.0.0.1:35446] client disconnect
-[20:20:02.209][127.0.0.1:35446] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35382: GET https://registry.npmjs.org/@oslojs%2fencoding
-              << 200 OK 1.8k
-[20:20:02.275][127.0.0.1:35382] client disconnect
-[20:20:02.275][127.0.0.1:35382] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.276][127.0.0.1:35458] client connect
-[20:20:02.276][127.0.0.1:35470] client connect
-[20:20:02.292][127.0.0.1:35458] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.294][127.0.0.1:35470] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.310][127.0.0.1:35474] client connect
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/encoding/-/encoding-1.1.0.tgz
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/encoding/-/encoding-0.4.1.tgz
-[20:20:02.325][127.0.0.1:35474] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@opencode-ai%2fplugin
-127.0.0.1:35458: GET https://registry.npmjs.org/@oslojs/encoding/-/encoding-…
-              << 200 OK 4.0k
-[20:20:02.508][127.0.0.1:35458] client disconnect
-[20:20:02.509][127.0.0.1:35458] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35470: GET https://registry.npmjs.org/@oslojs/encoding/-/encoding-…
-              << 200 OK 3.9k
-[20:20:02.513][127.0.0.1:35470] client disconnect
-[20:20:02.514][127.0.0.1:35470] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35416: GET https://registry.npmjs.org/@oslojs%2fasn1
-              << 200 OK 2.2k
-[20:20:02.644][127.0.0.1:35416] client disconnect
-[20:20:02.645][127.0.0.1:35416] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.645][127.0.0.1:35486] client connect
-[20:20:02.660][127.0.0.1:35486] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/asn1/-/asn1-1.0.0.tgz
-127.0.0.1:35474: GET https://registry.npmjs.org/@opencode-ai%2fplugin
-              << 200 OK 713k
-[20:20:02.794][127.0.0.1:35474] client disconnect
-[20:20:02.794][127.0.0.1:35474] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.820][127.0.0.1:35502] client connect
-[20:20:02.820][127.0.0.1:35514] client connect
-[20:20:02.821][127.0.0.1:35524] client connect
-[20:20:02.838][127.0.0.1:35502] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.840][127.0.0.1:35514] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.841][127.0.0.1:35524] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/zod
-[URL-LOGGER] GET https://registry.npmjs.org/@opencode-ai%2fsdk
-127.0.0.1:35486: GET https://registry.npmjs.org/@oslojs/asn1/-/asn1-1.0.0.tg…
-              << 200 OK 9.3k
-[URL-LOGGER] GET https://registry.npmjs.org/@opencode-ai/plugin/-/plugin-1.2.10.tgz
-[20:20:02.882][127.0.0.1:35486] client disconnect
-[20:20:02.882][127.0.0.1:35486] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35432: GET https://registry.npmjs.org/@oslojs%2fbinary
-              << 200 OK 2.3k
-[20:20:02.953][127.0.0.1:35432] client disconnect
-[20:20:02.953][127.0.0.1:35432] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:02.954][127.0.0.1:35538] client connect
-[20:20:02.972][127.0.0.1:35538] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/@oslojs/binary/-/binary-1.0.0.tgz
-127.0.0.1:35524: GET https://registry.npmjs.org/@opencode-ai/plugin/-/plugin…
-              << 200 OK 3.3k
-[20:20:03.072][127.0.0.1:35524] client disconnect
-[20:20:03.072][127.0.0.1:35524] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35502: GET https://registry.npmjs.org/zod
-              << 200 OK 299k
-[20:20:03.090][127.0.0.1:35502] client disconnect
-[20:20:03.091][127.0.0.1:35502] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:03.094][127.0.0.1:35548] client connect
-[20:20:03.109][127.0.0.1:35548] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[URL-LOGGER] GET https://registry.npmjs.org/zod/-/zod-4.1.8.tgz
-127.0.0.1:35548: GET https://registry.npmjs.org/zod/-/zod-4.1.8.tgz
-              << 200 OK 625k
-[20:20:03.203][127.0.0.1:35548] client disconnect
-[20:20:03.203][127.0.0.1:35548] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35538: GET https://registry.npmjs.org/@oslojs/binary/-/binary-1.0.…
-              << 200 OK 3.3k
-[20:20:03.251][127.0.0.1:35538] client disconnect
-[20:20:03.252][127.0.0.1:35538] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35514: GET https://registry.npmjs.org/@opencode-ai%2fsdk
-              << 200 OK 712k
-[20:20:03.290][127.0.0.1:35514] client disconnect
-[20:20:03.290][127.0.0.1:35514] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:03.322][127.0.0.1:35554] client connect
-[20:20:03.332][127.0.0.1:35568] client connect
-[20:20:03.337][127.0.0.1:35554] server connect registry.npmjs.org:443 (104.16.7.34:443)
-[20:20:03.347][127.0.0.1:35568] server connect github.com:443 (140.82.121.4:443)
-[URL-LOGGER] GET https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
-[URL-LOGGER] GET https://registry.npmjs.org/@opencode-ai/sdk/-/sdk-1.2.10.tgz
-127.0.0.1:35568: GET https://github.com/BurntSushi/ripgrep/releases/download…
+[17:57:04.412] Loading script /app/url_logger.py
+[17:57:04.414] HTTP(S) proxy listening at *:8080.
+[17:57:07.615][127.0.0.1:45806] client connect
+[URL-LOGGER] CONNECT  models.dev:443
+[17:57:07.960][127.0.0.1:45812] client connect
+[URL-LOGGER] CONNECT  github.com:443
+[17:57:07.980][127.0.0.1:45812] server connect github.com:443 (140.82.121.3:443)
+[17:57:08.001][127.0.0.1:45826] client connect
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+[URL-LOGGER] GET      https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
+[17:57:08.106][127.0.0.1:45840] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:08.109][127.0.0.1:45856] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:08.132][127.0.0.1:45856] server connect openrouter.ai:443 (104.18.3.115:443)
+[URL-LOGGER] POST     https://openrouter.ai/api/chat/completions
+127.0.0.1:45812: GET https://github.com/BurntSushi/ripgrep/releases/download…
               << 302 Found 0b
-[20:20:03.373][127.0.0.1:35568] client disconnect
-[20:20:03.374][127.0.0.1:35570] client connect
-[20:20:03.374][127.0.0.1:35568] server disconnect github.com:443 (140.82.121.4:443)
-[20:20:03.388][127.0.0.1:35570] server connect release-assets.githubusercontent.com:443 (185.199.108.133:443)
-[URL-LOGGER] GET https://release-assets.githubusercontent.com/github-production-release-asset/53631945/c3fb96a4-463b-40d5-8a6b-ee77f4cd30fd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-23T21%3A18%3A40Z&rscd=attachment%3B+filename%3Dripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-23T20%3A17%3A48Z&ske=2026-02-23T21%3A18%3A40Z&sks=b&skv=2018-11-09&sig=fhdyswMlNzV9TEDS3iYu3XBqMUuB33TbPmzfrkPrcVM%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MTg3ODIyMCwibmJmIjoxNzcxODc3OTIwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Z_WyiJqkm_j6OyQpYQJb46LRIEZpVLNftvynWnCaOTI&response-content-disposition=attachment%3B%20filename%3Dripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz&response-content-type=application%2Foctet-stream
-[20:20:03.420][127.0.0.1:35586] client connect
-[20:20:03.422][127.0.0.1:35590] client connect
-[20:20:03.482][127.0.0.1:35586] server connect openrouter.ai:443 (104.18.3.115:443)
-[20:20:03.510][127.0.0.1:35590] server connect openrouter.ai:443 (104.18.3.115:443)
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-127.0.0.1:35570: GET https://release-assets.githubusercontent.com/github-pro…
+[17:57:08.168][127.0.0.1:45812] client disconnect
+[17:57:08.168][127.0.0.1:45860] client connect
+[17:57:08.169][127.0.0.1:45812] server disconnect github.com:443 (140.82.121.3:443)
+[URL-LOGGER] CONNECT  release-assets.githubusercontent.com:443
+[17:57:08.193][127.0.0.1:45860] server connect release-assets.githubusercontent.com:443 (185.199.111.133:443)
+[URL-LOGGER] GET      https://release-assets.githubusercontent.com/github-production-release-asset/53631945/c3fb96a4-463b-40d5-8a6b-ee77f4cd30fd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-29T18%3A47%3A05Z&rscd=attachment%3B+filename%3Dripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-29T17%3A46%3A32Z&ske=2026-03-29T18%3A47%3A05Z&sks=b&skv=2018-11-09&sig=V17e5%2B6fb%2FCDPdAFIQzWrulmYREIW6os2kSb7%2FAXFAY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NDgwNzMyOCwibmJmIjoxNzc0ODA3MDI4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-N7SGMvc4kRGXmMAOnosl9XqPmYqkWRyBhx2ZZzO_tg&response-content-disposition=attachment%3B%20filename%3Dripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz&response-content-type=application%2Foctet-stream
+127.0.0.1:45860: GET https://release-assets.githubusercontent.com/github-pro…
               << 200 OK 2.4m
-[20:20:03.535][127.0.0.1:35570] client disconnect
-[20:20:03.535][127.0.0.1:35570] server disconnect release-assets.githubusercontent.com:443 (185.199.108.133:443)
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-127.0.0.1:35554: GET https://registry.npmjs.org/@opencode-ai/sdk/-/sdk-1.2.1…
-              << 200 OK 71.3k
-[20:20:03.560][127.0.0.1:35554] client disconnect
-[20:20:03.560][127.0.0.1:35554] server disconnect registry.npmjs.org:443 (104.16.7.34:443)
-127.0.0.1:35586: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.5k
-[20:20:04.052][127.0.0.1:35586] client disconnect
-[20:20:04.053][127.0.0.1:35586] server disconnect openrouter.ai:443 (104.18.3.115:443)
-127.0.0.1:35590: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.5k
-[20:20:04.207][127.0.0.1:35590] client disconnect
-[20:20:04.208][127.0.0.1:35590] server disconnect openrouter.ai:443 (104.18.3.115:443)
-[20:20:04.670][127.0.0.1:35596] client connect
-[20:20:04.684][127.0.0.1:35596] server connect models.dev:443 (104.26.8.108:443)
-[URL-LOGGER] GET https://models.dev/api.json
-127.0.0.1:35596: GET https://models.dev/api.json
-              << 200 OK 112k
-[20:20:04.744][127.0.0.1:35596] client disconnect
-[20:20:04.744][127.0.0.1:35596] server disconnect models.dev:443 (104.26.8.108:443)
-[20:20:05.040][127.0.0.1:35610] client connect
-[20:20:05.042][127.0.0.1:35612] client connect
-[20:20:05.055][127.0.0.1:35610] server connect openrouter.ai:443 (104.18.3.115:443)
-[20:20:05.056][127.0.0.1:35612] server connect openrouter.ai:443 (104.18.3.115:443)
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-127.0.0.1:35610: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.5k
-[20:20:05.599][127.0.0.1:35610] client disconnect
-[20:20:05.599][127.0.0.1:35610] server disconnect openrouter.ai:443 (104.18.3.115:443)
-127.0.0.1:35612: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 2.0k
-[20:20:06.321][127.0.0.1:35612] client disconnect
-[20:20:06.321][127.0.0.1:35612] server disconnect openrouter.ai:443 (104.18.3.115:443)
-[20:20:06.848][127.0.0.1:35626] client connect
-[20:20:06.864][127.0.0.1:35626] server connect models.dev:443 (104.26.8.108:443)
-[URL-LOGGER] GET https://models.dev/api.json
-127.0.0.1:35626: GET https://models.dev/api.json
-              << 200 OK 112k
-[20:20:06.923][127.0.0.1:35626] client disconnect
-[20:20:06.923][127.0.0.1:35626] server disconnect models.dev:443 (104.26.8.108:443)
-[20:20:07.163][127.0.0.1:35642] client connect
-[20:20:07.164][127.0.0.1:35648] client connect
-[20:20:07.182][127.0.0.1:35642] server connect openrouter.ai:443 (104.18.3.115:443)
-[20:20:07.183][127.0.0.1:35648] server connect openrouter.ai:443 (104.18.3.115:443)
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-127.0.0.1:35642: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.8k
-[20:20:07.641][127.0.0.1:35642] client disconnect
-[20:20:07.641][127.0.0.1:35642] server disconnect openrouter.ai:443 (104.18.3.115:443)
-127.0.0.1:35648: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.3k
-[20:20:08.146][127.0.0.1:35648] client disconnect
-[20:20:08.147][127.0.0.1:35648] server disconnect openrouter.ai:443 (104.18.3.115:443)
-[20:20:08.210][127.0.0.1:35656] client connect
-[20:20:08.226][127.0.0.1:35656] server connect openrouter.ai:443 (104.18.3.115:443)
-[URL-LOGGER] POST https://openrouter.ai/api/v1/chat/completions
-127.0.0.1:35656: POST https://openrouter.ai/api/v1/chat/completions
-              << 200 OK 1.9k
-[20:20:09.116][127.0.0.1:35656] client disconnect
-[20:20:09.116][127.0.0.1:35656] server disconnect openrouter.ai:443 (104.18.3.115:443)
+[17:57:08.354][127.0.0.1:45860] client disconnect
+[17:57:08.354][127.0.0.1:45860] server disconnect release-assets.githubusercontent.com:443 (185.199.111.133:443)
+127.0.0.1:45856: POST https://openrouter.ai/api/chat/completions
+              << 200 OK 12.5k
+[17:57:08.775][127.0.0.1:45856] client disconnect
+[17:57:08.775][127.0.0.1:45856] server disconnect openrouter.ai:443 (104.18.3.115:443)
+[17:57:08.844][127.0.0.1:45840] client disconnect
+[17:57:08.845][127.0.0.1:45840] error establishing server connection: client disconnected
+[17:57:08.846][127.0.0.1:45806] client disconnect
+[17:57:08.846][127.0.0.1:45806] error establishing server connection: client disconnected
+[17:57:09.380][127.0.0.1:45870] client connect
+[URL-LOGGER] CONNECT  models.dev:443
+[17:57:09.395][127.0.0.1:45870] server connect models.dev:443 (104.26.9.108:443)
+[URL-LOGGER] GET      https://models.dev/api.json
+127.0.0.1:45870: GET https://models.dev/api.json
+              << 200 OK 155k
+[17:57:09.475][127.0.0.1:45870] client disconnect
+[17:57:09.476][127.0.0.1:45870] server disconnect models.dev:443 (104.26.9.108:443)
+[17:57:09.832][127.0.0.1:45882] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:09.835][127.0.0.1:45896] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:09.847][127.0.0.1:45882] server connect openrouter.ai:443 (104.18.3.115:443)
+[17:57:09.849][127.0.0.1:45896] server connect openrouter.ai:443 (104.18.3.115:443)
+[URL-LOGGER] POST     https://openrouter.ai/api/chat/completions
+[URL-LOGGER] POST     https://openrouter.ai/api/chat/completions
+[17:57:10.300][127.0.0.1:45826] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[URL-LOGGER] GET      https://registry.npmjs.org/@opencode-ai%2fplugin
+127.0.0.1:45826: GET https://registry.npmjs.org/@opencode-ai%2fplugin
+              << 200 OK 967k
+[17:57:10.458][127.0.0.1:45826] client disconnect
+[17:57:10.458][127.0.0.1:45826] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+127.0.0.1:45882: POST https://openrouter.ai/api/chat/completions
+              << 200 OK 12.5k
+[17:57:10.468][127.0.0.1:45882] client disconnect
+[17:57:10.468][127.0.0.1:45882] server disconnect openrouter.ai:443 (104.18.3.115:443)
+[17:57:10.496][127.0.0.1:45906] client connect
+[17:57:10.496][127.0.0.1:45922] client connect
+[17:57:10.497][127.0.0.1:45924] client connect
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+[17:57:10.518][127.0.0.1:45906] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[17:57:10.525][127.0.0.1:45922] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[17:57:10.533][127.0.0.1:45924] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[URL-LOGGER] GET      https://registry.npmjs.org/zod
+[URL-LOGGER] GET      https://registry.npmjs.org/@opencode-ai%2fsdk
+[URL-LOGGER] GET      https://registry.npmjs.org/@opencode-ai/plugin/-/plugin-1.3.5.tgz
+127.0.0.1:45924: GET https://registry.npmjs.org/@opencode-ai/plugin/-/plugin…
+              << 200 OK 6.1k
+127.0.0.1:45906: GET https://registry.npmjs.org/zod
+              << 200 OK 299k
+[17:57:10.619][127.0.0.1:45924] client disconnect
+[17:57:10.619][127.0.0.1:45924] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+[17:57:10.622][127.0.0.1:45906] client disconnect
+[17:57:10.622][127.0.0.1:45906] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+127.0.0.1:45896: POST https://openrouter.ai/api/chat/completions
+              << 200 OK 12.5k
+[17:57:10.625][127.0.0.1:45896] client disconnect
+[17:57:10.625][127.0.0.1:45896] server disconnect openrouter.ai:443 (104.18.3.115:443)
+[17:57:10.627][127.0.0.1:45940] client connect
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+127.0.0.1:45922: GET https://registry.npmjs.org/@opencode-ai%2fsdk
+              << 200 OK 961k
+[17:57:10.654][127.0.0.1:45940] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[17:57:10.660][127.0.0.1:45922] client disconnect
+[17:57:10.661][127.0.0.1:45922] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+[URL-LOGGER] GET      https://registry.npmjs.org/zod/-/zod-4.1.8.tgz
+[17:57:10.694][127.0.0.1:45942] client connect
+[URL-LOGGER] CONNECT  registry.npmjs.org:443
+[17:57:10.708][127.0.0.1:45942] server connect registry.npmjs.org:443 (104.16.6.34:443)
+[URL-LOGGER] GET      https://registry.npmjs.org/@opencode-ai/sdk/-/sdk-1.3.5.tgz
+127.0.0.1:45940: GET https://registry.npmjs.org/zod/-/zod-4.1.8.tgz
+              << 200 OK 625k
+[17:57:10.757][127.0.0.1:45940] client disconnect
+[17:57:10.757][127.0.0.1:45940] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+127.0.0.1:45942: GET https://registry.npmjs.org/@opencode-ai/sdk/-/sdk-1.3.5…
+              << 200 OK 72.6k
+[17:57:10.802][127.0.0.1:45942] client disconnect
+[17:57:10.802][127.0.0.1:45942] server disconnect registry.npmjs.org:443 (104.16.6.34:443)
+[17:57:11.226][127.0.0.1:45954] client connect
+[URL-LOGGER] CONNECT  models.dev:443
+[17:57:11.241][127.0.0.1:45954] server connect models.dev:443 (104.26.9.108:443)
+[URL-LOGGER] GET      https://models.dev/api.json
+127.0.0.1:45954: GET https://models.dev/api.json
+              << 200 OK 154k
+[17:57:11.318][127.0.0.1:45954] client disconnect
+[17:57:11.318][127.0.0.1:45954] server disconnect models.dev:443 (104.26.9.108:443)
+[17:57:11.707][127.0.0.1:45958] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:11.710][127.0.0.1:45966] client connect
+[URL-LOGGER] CONNECT  openrouter.ai:443
+[17:57:11.721][127.0.0.1:45958] server connect openrouter.ai:443 (104.18.3.115:443)
+[17:57:11.723][127.0.0.1:45966] server connect openrouter.ai:443 (104.18.3.115:443)
+[URL-LOGGER] POST     https://openrouter.ai/api/chat/completions
+[URL-LOGGER] POST     https://openrouter.ai/api/chat/completions
+127.0.0.1:45958: POST https://openrouter.ai/api/chat/completions
+              << 200 OK 12.5k
+[17:57:12.170][127.0.0.1:45958] client disconnect
+[17:57:12.171][127.0.0.1:45958] server disconnect openrouter.ai:443 (104.18.3.115:443)
+127.0.0.1:45966: POST https://openrouter.ai/api/chat/completions
+              << 200 OK 12.5k
+[17:57:12.265][127.0.0.1:45966] client disconnect
+[17:57:12.266][127.0.0.1:45966] server disconnect openrouter.ai:443 (104.18.3.115:443)
