@@ -164,7 +164,6 @@ OPENCODE_VERSION=x.y.z RUN_OUTPUT_DIR=output uv run python report_generator.py
 | `sbom_generator.py` | SBOM from captured traffic; supply chain check vs baseline |
 | `url_logger.py` | mitmproxy addon — logs CONNECT tunnels, requests, and errors |
 | `run_investigation.sh` | Docker entrypoint: starts proxy, runs prompts, calls SBOM |
-| `vt_scanner.py` | Optional: scan URLs and binaries with VirusTotal |
 | `Dockerfile` | Ubuntu 24.04 + Node.js 20 + mitmproxy + opencode-ai |
 | `openrouter.json` | opencode config (copied as `opencode.json` into the container) |
 | `api.env` | LLM provider credentials (gitignored) |
