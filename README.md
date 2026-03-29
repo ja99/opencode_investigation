@@ -99,13 +99,14 @@ grep '^ERROR' output/urls.log
 
 ## Results (TL;DR)
 
-With `share: "disabled"`, `autoupdate: false`, `openTelemetry: false`, and `disabled_providers: ["opencode"]`:
+Tested on v1.3.5 with `share: "disabled"`, `autoupdate: false`, `openTelemetry: false`, and `disabled_providers: ["opencode"]`:
 
 - ✅ No telemetry or analytics endpoints detected
 - ✅ No workspace content sent to unexpected services
 - ✅ No opencode.ai servers contacted
-- ⚠️ Runtime npm package downloads on every cold start (including unused Anthropic auth)
-- ⚠️ Third-party model catalog fetch from `models.dev`
+- ✅ Anthropic auth packages no longer fetched (removed since v1.2.10)
+- ⚠️ Runtime npm package downloads on every cold start (`@opencode-ai/plugin`, `@opencode-ai/sdk`, `zod`)
+- ⚠️ Third-party model catalog fetch from `models.dev` (once per prompt)
 - ⚠️ ripgrep binary download from GitHub
 
-See [report.md](report.md) for the full analysis.
+See [report.md](report.md) for the full analysis and version history.
