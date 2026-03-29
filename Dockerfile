@@ -44,6 +44,12 @@ COPY openrouter.json /workspace/opencode.json
 # Copy mitmproxy logger addon
 COPY url_logger.py /app/url_logger.py
 
+# Copy SBOM generator
+COPY sbom_generator.py /app/sbom_generator.py
+
+# Install httpx for sbom_generator.py
+RUN pip install httpx --break-system-packages
+
 # Copy entrypoint script
 COPY run_investigation.sh /app/run_investigation.sh
 RUN chmod +x /app/run_investigation.sh

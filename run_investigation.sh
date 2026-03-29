@@ -51,6 +51,16 @@ echo "=== All prompts done. Stopping mitmproxy... ==="
 kill "$MITM_PID" 2>/dev/null || true
 wait "$MITM_PID" 2>/dev/null || true
 
+# Unset proxy before SBOM runs — mitmproxy is already stopped
+unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy
+
+echo ""
+echo "=== Generating SBOM ==="
+URL_LOG_FILE="$URL_LOG" \
+SBOM_OUTPUT="$OUTPUT_DIR/sbom.json" \
+SBOM_BASELINE="$OUTPUT_DIR/sbom_baseline.json" \
+python3 /app/sbom_generator.py || echo "[WARN] SBOM generation failed (exit $?)"
+
 echo ""
 echo "======================================"
 echo "  CAPTURED URLS (unique, sorted)"
