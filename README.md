@@ -27,6 +27,18 @@ A Docker container (Ubuntu 24.04) runs opencode-ai with **all HTTP/HTTPS traffic
 └─────────────────────────────────────────┘
 ```
 
+### Log format
+
+`url_logger.py` uses three mitmproxy hooks to ensure destinations are captured even when connections fail (e.g. DNS not working):
+
+| Prefix | Hook | When logged |
+|---|---|---|
+| `CONNECT  host:port` | `http_connect` | TLS tunnel opened — fires **before DNS resolution** |
+| `METHOD   https://…` | `request` | Full request decoded inside the tunnel |
+| `ERROR    host:port  [msg]` | `error` | Connection/DNS/TLS failure with error detail |
+
+For a successful HTTPS request you see both a `CONNECT` and a `METHOD` line. For a DNS failure you see `CONNECT` + `ERROR`, which still tells you which host was attempted.
+
 ## Quick Start
 
 ### 1. Configure
@@ -61,11 +73,14 @@ docker run --rm -v "$(pwd)/output:/output" opencode-investigation
 ### 4. Analyze
 
 ```bash
-# Unique URLs contacted
-sort -u output/urls.log
+# All attempted destinations (successful + failed)
+grep -E '^(CONNECT|GET|POST|PUT|DELETE|ERROR)' output/urls.log | sort -u
 
-# Unique domains
-awk '{print $2}' output/urls.log | sed 's|https\?://||' | sed 's|/.*||' | sort -u
+# Unique domains (from decoded requests only)
+grep -v '^CONNECT\|^ERROR' output/urls.log | awk '{print $2}' | sed 's|https\?://||' | sed 's|/.*||' | sort -u
+
+# DNS failures
+grep '^ERROR' output/urls.log
 ```
 
 ## Files
@@ -76,7 +91,7 @@ awk '{print $2}' output/urls.log | sed 's|https\?://||' | sed 's|/.*||' | sort -
 | `openrouter.json` | opencode config (copied as `opencode.json` into container) |
 | `api.env` | Environment variables for the LLM provider |
 | `api.env.example` | Template for `api.env` |
-| `url_logger.py` | mitmproxy addon that logs every request URL |
+| `url_logger.py` | mitmproxy addon that logs CONNECT tunnels, requests, and errors |
 | `run_investigation.sh` | Entrypoint: starts proxy, runs prompts, reports results |
 | `report.md` | Full analysis of captured traffic |
 | `output/urls.log` | Raw captured URLs (after running) |
